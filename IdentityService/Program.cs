@@ -40,12 +40,10 @@ var app = builder.Build();
 ApplicationDbContextInitializer.IdentityDbContextInitializer(app);
 
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+
 
 
 app.UseHttpsRedirection();
